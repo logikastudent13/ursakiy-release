@@ -1,0 +1,171 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+   background-color: #0A187E
+}
+
+/* Шапка */
+.header {
+    background-color: #097DD6;
+    color: #0E22B5;
+    text-align: center;
+    padding: 1rem;
+/*     position: sticky; */
+  height:80px;
+  
+}
+
+/* Навігація */
+.navigation {
+    background-color: rgba(107, 114, 172, 0.993);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 1rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+/* Основна частина */
+.main-content {
+    display: flex;
+    flex-direction: column;
+  align-items:center;
+    gap: 2rem;
+  padding:30px 0;
+/*     padding: 2rem; */
+}
+section{
+  width:80%;
+}
+/* Розділ 1: Статті у вертикальному напрямку */
+.section-1 {
+    background-color: #0E22B5;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.section-1 article {
+    background-color: #045B85;
+    border: 1px solid #0572A7;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Розділ 2: Статті у горизонтальному напрямку */
+.section-2 {
+    background-color: #0E22B5;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.section-2 article {
+    background-color: #045B85;
+    border: 1px solid #0572A7;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-2 img {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Загальний стиль зображень */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+section article{
+  transition:0.2s;
+}
+section article:hover {
+  cursor:pointer;
+  box-shadow:0 0 3px 0 black;
+}
+
+/* Підвал */
+.footer {
+    background-color: #2020a5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.ad{
+  position:fixed;right: 10px;
+background-color: #ff6f00;
+padding: 7px;
+border-radius: 50%;
+height: 50px;
+width: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+bottom: 111px;
+transition: 0.2s;
+}
+.ad h1{
+  width: 0px;
+transition: 0.2s;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  overflow: hidden;
+}
+.ad:hover{
+  width: 250px;
+  border-radius: 50px;
+}
+.ad:hover h1{
+width: 180px;
+}
+
